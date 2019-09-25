@@ -1,0 +1,404 @@
+.headtitle {
+    padding: 0 100px;
+}
+
+.menu > a {
+    color: #494949;
+    font-size: 13px !important;
+}
+
+.menu > a:hover {
+    text-decoration: none !important;
+    color: #f2cc3c;
+}
+
+.top-left {
+    font-size: 12px;
+}
+
+.search {
+    width: 80%;
+    height: 25px;
+    font-size: 12px;
+    outline: none;
+}
+
+.search-btn {
+    position: relative;
+    width: 40%;
+}
+
+.search-icon {
+    position: absolute;
+    right: .5rem;
+    font-size: 13px;
+    color: silver !important;
+}
+
+.cart {
+    margin-top: -5px;
+}
+
+.hot-list {
+    position: relative;
+}
+
+.hot {
+    position: absolute;
+    right: 0;
+    top: -20px;
+}
+
+.content {
+    position: relative;
+    overflow: hidden;
+}
+
+.font-animate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.animte-1:nth-child(1) {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 30%;
+}
+
+.animte-1:nth-child(2) {
+    position: absolute;
+    z-index: 5;
+    left: 30%;
+    top: 30%;
+}
+
+.animte-1 > div:nth-child(1), .animte-1 > div:nth-child(2) {
+    font-family: 'Niconne', cursive;
+}
+
+.shop {
+    width: 160px;
+    line-height: 30px;
+    border-radius: 20px;
+    background: black;
+    color: #fff;
+    position: absolute;
+    bottom: -450px;
+    padding-left: 20px;
+}
+
+.animation-2 {
+    animation: animte-info2 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animte-info2 {
+    0% {
+        bottom: -450px;
+    }
+    50% {
+        bottom: -140px;
+    }
+    70% {
+        bottom: -150px;
+    }
+    80% {
+        bottom: -130px;
+    }
+    90% {
+        bottom: -135px;
+    }
+    100% {
+        bottom: -140px;
+    }
+}
+
+.shop:hover {
+    background: #fff;
+    color: black;
+}
+
+.shop > i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #fff;
+    color: black;
+    text-align: center;
+    line-height: 24px;
+    margin: 3px;
+    position: absolute;
+    right: 5px;
+}
+
+.shop:hover i {
+    color: #fff;
+    background: black;
+}
+
+.h-1 {
+    position: absolute;
+    width: 300px;
+    top: -200px;
+}
+
+.animation-0 {
+    animation: animte-info0 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animte-info0 {
+    0% {
+        top: -200px;
+    }
+    50% {
+        top: 0px;
+    }
+    70% {
+        top: -10px;
+    }
+    80% {
+        top: 10px;
+    }
+    90% {
+        top: -5px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+.h-2 {
+    position: absolute;
+    width: 300px;
+    top: 40px;
+    left: -1200px;
+}
+
+.animation-1 {
+    animation: animte-info1 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animte-info1 {
+    0% {
+        left: -1200px;
+    }
+    50% {
+        left: 0px;
+    }
+    70% {
+        left: -10px;
+    }
+    80% {
+        left: 10px;
+    }
+    90% {
+        left: -5px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+.borderR {
+    border-radius: 50%;
+    border: 1px solid goldenrod;
+    width: 55px;
+    height: 55px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.titlelist > a {
+    font-weight: bold;
+    color: #b9a745;
+    font-size: 22px;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.titlelist > a:hover {
+    color: black;
+}
+
+.titlelist > p {
+    font-size: 13px;
+}
+
+.img-b {
+    position: relative;
+    margin: 0 -15px;
+}
+
+.img-borderanimate {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0px solid rgba(192, 192, 192, 0.54);
+    box-sizing: border-box;
+    transition: border-width .2s linear;
+}
+
+.img-b:hover .img-borderanimate {
+    border-width: 15px;
+}
+
+.slider-button {
+    width: 160px;
+    line-height: 30px;
+    border-radius: 20px;
+    background: #B9A745;
+    color: #fff;
+    position: absolute;
+    padding-left: 20px;
+    left: 14%;
+    top: 60%;
+    font-weight: bold;
+    transition: all .3s linear;
+}
+
+.slider-button:hover {
+    color: black;
+}
+
+.slider-button > i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #fff;
+    color: black;
+    text-align: center;
+    line-height: 24px;
+    margin: 3px;
+    position: absolute;
+    right: 5px;
+}
+
+.slider-button:hover i {
+    color: #fff;
+    background: black;
+}
+
+.li-line {
+    border-right: 2px solid #a6a6a6;
+}
+
+.menu-item > li {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.menu-item > li:nth-child(1) a {
+    color: #000;
+    text-decoration: none;
+}
+
+.menu-item > li:nth-child(2) a, .menu-item > li:nth-child(3) a {
+    color: #d8d8d8;
+    text-decoration: none;
+}
+
+.menu-item > li a:hover {
+    color: #000;
+}
+
+.img-list-pro {
+    margin: 0 -5px;
+}
+
+.pro-price {
+    font-size: 15px;
+    color: #b9a745;
+}
+
+.pro-price > del {
+    color: silver;
+}
+
+.img-pro-par {
+    position: relative;
+    overflow: hidden;
+}
+
+.pro-left {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    top: -100%;
+    background: rgba(255, 255, 255, 0.61);
+    transition: all 0.3s ease-in-out;
+}
+
+.pro-right {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    top: 100%;
+    background: rgba(255, 255, 255, 0.61);
+    transition: all 0.3s ease-in-out;
+}
+
+.img-pro-par:hover .pro-left {
+    left: 0;
+    top: 0;
+}
+
+.img-pro-par:hover .pro-right {
+    left: 0;
+    top: 0;
+}
+
+.car-list {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    text-align: center;
+}
+
+.car-list > i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #d6d6d6;
+    text-align: center;
+    line-height: 30px;
+    opacity: 0;
+}
+
+.car-list i:nth-child(1) {
+    transition: opacity .5s .8s linear;
+}
+
+.car-list i:nth-child(2) {
+    transition: opacity .5s 1s linear;
+}
+
+.car-list i:nth-child(3) {
+    transition: opacity .5s .3s linear;
+}
+
+.car-list i:nth-child(4) {
+    transition: opacity  .5s .5s linear;
+}
+
+.img-pro-par:hover > .car-list i {
+    opacity: 1;
+}
+
+@media (max-width: 1380px) {
+    .headtitle {
+        padding: 0;
+    }
+}

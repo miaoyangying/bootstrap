@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>男女服装电商网站</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/font-awesome.css"/>
+    <link rel="stylesheet" href="./css/niconne.css"/>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<div class="headtitle">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="d-flex col-lg-2 justify-content-end">
+                <a class="align-self-center" href="#"><img src="./img/header-logo.png" alt=""/></a>
+            </div>
+            <div class="col-lg-10">
+                <div class="row">
+                    <div class="col-lg-5 py-3 top-left">
+                        <span>We are open 9 am - 10pm</span>
+                    </div>
+                    <div class="col-lg-7  py-3 text-right">
+                        <div class="search-btn d-inline-block mr-4">
+                            <input class="search pl-3" type="text" placeholder="Search here..."/>
+                            <i class="fa fa-search search-icon py-1"></i>
+                        </div>
+                        <span class="menu">
+                        <a class="py-3 pr-3" href="#">Login or Register</a>
+                        <a class="py-3 px-3" href="#">Checkout</a>
+                        <a class="py-3 pl-3" href="#">
+                            <img class="img-fluid mr-2 cart" src="./img/cart.png" alt=""/>
+                            Cart(3)</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 menu">
+                        <a class="py-2 pr-2" href="#">HOME</a>
+                        <a class="py-2 px-2" href="#">ABOUT</a>
+                        <a class="py-2 px-2" href="#">SHOP</a>
+                        <a class="py-2 px-2" href="#">MEN</a>
+                        <a class="py-2 px-2 hot-list" href="#">
+                            WOMEN
+                            <img class="hot" src="./img/hot.png" alt=""/>
+                        </a>
+                        <a class="py-2 px-2" href="#">ACCESSORIES</a>
+                        <a class="py-2 px-2" href="#">PAGES</a>
+                        <a class="py-2 px-2" href="#">CONTCAT</a>
+                    </div>
+                    <div class="col-lg-3 menu">
+                        <a class="py-3 pr-3" href="#">My Account
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <a class="py-3 pr-3" href="#"> USD
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <a class="py-3" href="#">
+                            <img class="mr-2" src="./img/eng.jpg" alt=""/>
+                            English
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="./css/style.css"/>
+<div class="container-fluid">
+    <div class="content row">
+        <div id="slider">
+            <a href="#"><img class="img-fluid" src="img/1.jpg"/></a>
+            <a href="#"><img class="img-fluid" src="img/2.jpg"/></a>
+        </div>
+        <div class="font-animate">
+            <div class="animte-1">
+                <div class="h2 h-1">Summer Collection</div>
+                <div class="h1 h-2">FOR MEN - 2016</div>
+                <div class="shop">
+                    SHOP SHOW
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+            <div class="animte-1">
+                <div class="h2 h-1">Summer Collection</div>
+                <div class="h1 h-2">FOR MEN - 2100</div>
+                <div class="shop">
+                    SHOP SHOW
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/mc.silder.js"></script>
+<script>
+    $(".animte-1").eq(0).find("div").each(function (index) {
+        $(this).addClass("animation-" + index);
+    });
+    $(function () {
+        $("#slider").mcSlider({
+            width: $(window).width(),
+            height: $(window).width() / 2.8235,
+            gridCol: 10,
+            gridRow: 5,
+            gridH: 20,
+            gridV: 10,
+            effects: ['fade', 'fadeLeft', 'fadeTopLeft', "fadeRight", "bomb"],
+            duration: 2000,
+            speed: 700,
+            isscend: true
+        });
+    });
+</script>
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-lg-3 d-flex py-4 align-items-center justify-content-center">
+            <div class="d-inline-block align-self-center text-center  borderR">
+                <img class="" src="./img/1.png" alt=""/>
+            </div>
+            <div class="d-inline-block mt-2 ml-2  titlelist">
+                <a href="#">FREE SHIPPING</a>
+
+                <p>Free for all product</p>
+            </div>
+        </div>
+        <div class="col-lg-3 d-flex py-4 align-items-center justify-content-center">
+            <div class="d-inline-block align-self-center text-center  borderR">
+                <img class="" src="./img/2.png" alt=""/>
+            </div>
+            <div class="d-inline-block mt-2 ml-2  titlelist">
+                <a href="#">FREE SHIPPING</a>
+
+                <p>Free for all product</p>
+            </div>
+        </div>
+        <div class="col-lg-3 d-flex py-4 align-items-center justify-content-center">
+            <div class="d-inline-block align-self-center text-center  borderR">
+                <img class="" src="./img/3.png" alt=""/>
+            </div>
+            <div class="d-inline-block mt-2 ml-2  titlelist">
+                <a href="#">FREE SHIPPING</a>
+
+                <p>Free for all product</p>
+            </div>
+        </div>
+        <div class="col-lg-3 d-flex py-4 align-items-center justify-content-center">
+            <div class="d-inline-block align-self-center text-center  borderR">
+                <img class="" src="./img/4.png" alt=""/>
+            </div>
+            <div class="d-inline-block mt-2 ml-2  titlelist">
+                <a href="#">FREE SHIPPING</a>
+
+                <p>Free for all product</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="img-b">
+                <div class="img-borderanimate"></div>
+                <img class="img-fluid" src="./img/banner/1%20(1).jpg" alt=""/>
+
+                <div class="slider-button">
+                    SHOP SHOW
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="img-b">
+                <div class="img-borderanimate"></div>
+                <img class="img-fluid" src="./img/banner/2.jpg" alt=""/>
+
+                <div class="slider-button">
+                    SHOP SHOW
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="img-b">
+                <div class="img-borderanimate"></div>
+                <img class="img-fluid" src="./img/banner/3.jpg" alt=""/>
+
+                <div class="slider-button">
+                    SHOP SHOW
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row mt-5 pt-5">
+        <ul class="list-inline menu-item offset-lg-1">
+            <li class="list-inline-item li-line px-4">
+                <a href="#">NEW ARRIVAL</a>
+            </li>
+            <li class="list-inline-item li-line px-4">
+                <a href="#">FEATURED</a>
+            </li>
+            <li class="list-inline-item px-4">
+                <a href="#">BEST SELLING</a>
+            </li>
+        </ul>
+    </div>
+    <div class="row mt-2">
+        <div class="col-lg-2 offset-lg-1">
+            <div class="img-list-pro card">
+                <div class="card-body">
+                    <div class="img-pro-par">
+                        <div class="pro-left"></div>
+                        <div class="pro-right"></div>
+                        <div class="car-list">
+                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-refresh"></i>
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img class="img-fluid" src="./img/product/1.jpg" alt=""/>
+                    </div>
+
+                    <div class="card-text clearfix py-2">
+                        <span class="float-left" style="font-size: 12px;color: #b9a745;">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span>
+                        <span class="float-right pro-price">
+                            $100
+                            <del>$130</del>
+                        </span>
+                    </div>
+                    <div class="card-title py-2" style="font-size: 14px;">
+                        Mortria ostma
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="img-list-pro card">
+                <div class="card-body">
+                    <div class="img-pro-par">
+                        <div class="pro-left"></div>
+                        <div class="pro-right"></div>
+                        <div class="car-list">
+                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-refresh"></i>
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img class="img-fluid" src="./img/product/2.jpg" alt=""/>
+                    </div>
+                    <div class="card-text clearfix py-2">
+                        <span class="float-left" style="font-size: 12px;color: #b9a745;">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span>
+                        <span class="float-right pro-price">
+                            $100
+                            <del>$130</del>
+                        </span>
+                    </div>
+                    <div class="card-title py-2" style="font-size: 14px;">
+                        Mortria ostma
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="img-list-pro card">
+                <div class="card-body">
+                    <div class="img-pro-par">
+                        <div class="pro-left"></div>
+                        <div class="pro-right"></div>
+                        <div class="car-list">
+                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-refresh"></i>
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img class="img-fluid" src="./img/product/3.jpg" alt=""/>
+                    </div>
+                    <div class="card-text clearfix py-2">
+                        <span class="float-left" style="font-size: 12px;color: #b9a745;">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span>
+                        <span class="float-right pro-price">
+                            $100
+                            <del>$130</del>
+                        </span>
+                    </div>
+                    <div class="card-title py-2" style="font-size: 14px;">
+                        Mortria ostma
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="img-list-pro card">
+                <div class="card-body">
+                    <div class="img-pro-par">
+                        <div class="pro-left"></div>
+                        <div class="pro-right"></div>
+                        <div class="car-list">
+                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-refresh"></i>
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img class="img-fluid" src="./img/product/4.jpg" alt=""/>
+                    </div>
+                    <div class="card-text clearfix py-2">
+                        <span class="float-left" style="font-size: 12px;color: #b9a745;">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span>
+                        <span class="float-right pro-price">
+                            $100
+                            <del>$130</del>
+                        </span>
+                    </div>
+                    <div class="card-title py-2" style="font-size: 14px;">
+                        Mortria ostma
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="img-list-pro card">
+                <div class="card-body">
+                    <div class="img-pro-par">
+                        <div class="pro-left"></div>
+                        <div class="pro-right"></div>
+                        <div class="car-list">
+                            <i class="fa fa-shopping-cart"></i>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-refresh"></i>
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <img class="img-fluid" src="./img/product/5.jpg" alt=""/>
+                    </div>
+                    <div class="card-text clearfix py-2">
+                        <span class="float-left" style="font-size: 12px;color: #b9a745;">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span>
+                        <span class="float-right pro-price">
+                            $100
+                            <del>$130</del>
+                        </span>
+                    </div>
+                    <div class="card-title py-2" style="font-size: 14px;">
+                        Mortria ostma
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row py-3 " style=" position: relative;">
+        <div class="slider-button m-auto" style=" position: relative; left: 0; top: 0;">
+            SHOP SHOW
+            <i class="fa fa-angle-right"></i>
+        </div>
+    </div>
+</div>
+</body>
+</html>
